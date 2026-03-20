@@ -321,12 +321,23 @@ export default {
   padding: 0;
 }
 
+.page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
 .card {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .card-header {
@@ -334,7 +345,7 @@ export default {
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #0f172a;
   margin: 0;
@@ -352,6 +363,9 @@ export default {
   font-weight: 600;
   color: #64748b;
   border-bottom: 2px solid #e2e8f0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .reports-table td {
@@ -359,8 +373,16 @@ export default {
   border-bottom: 1px solid #e2e8f0;
 }
 
-.reports-table tr:hover {
+.reports-table tbody tr:nth-child(even) {
   background: #f8fafc;
+}
+
+.reports-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.reports-table tbody tr:hover {
+  background: #f1f5f9;
 }
 
 .chart-container {
@@ -424,7 +446,7 @@ export default {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
   border-left: 4px solid #3b82f6;
 }
 

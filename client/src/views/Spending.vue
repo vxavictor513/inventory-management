@@ -492,6 +492,28 @@ export default {
 </script>
 
 <style scoped>
+.page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
 .stat-change {
   margin-top: 0.75rem;
   font-size: 0.875rem;
@@ -790,11 +812,11 @@ export default {
   text-align: left;
   padding: 0.625rem 0.75rem;
   font-weight: 600;
-  color: #475569;
+  color: #64748b;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 2px solid #e2e8f0;
 }
 
 .transactions-table th.text-right {
@@ -812,12 +834,20 @@ export default {
   transition: background-color 0.15s ease;
 }
 
-.transactions-table tbody tr:hover {
+.transactions-table tbody tr:nth-child(even) {
   background: #f8fafc;
 }
 
+.transactions-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.transactions-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
 .transactions-table tbody tr.clickable-row:hover {
-  background: #eff6ff;
+  background: #f1f5f9;
 }
 
 .transaction-id {

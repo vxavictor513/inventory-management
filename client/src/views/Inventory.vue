@@ -230,6 +230,9 @@ export default {
 }
 
 .page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
   margin-bottom: 0.25rem;
 }
 
@@ -335,5 +338,30 @@ export default {
 
 .clickable-row:hover {
   background: #eff6ff !important;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+}
+
+table thead th {
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+table tbody tr:hover {
+  background: #f1f5f9;
 }
 </style>
