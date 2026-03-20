@@ -734,6 +734,12 @@ export default {
   margin-bottom: 1rem;
 }
 
+.page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
 .header-meta {
   font-size: 0.813rem;
   color: #64748b;
@@ -746,7 +752,7 @@ export default {
 .section-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #475569;
+  color: #0f172a;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
@@ -762,7 +768,8 @@ export default {
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .kpi-header {
@@ -1267,5 +1274,41 @@ export default {
   background: #475569;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(100, 116, 139, 0.3);
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+}
+
+.card-header {
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+table thead th {
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+table tbody tr:hover {
+  background: #f1f5f9;
 }
 </style>

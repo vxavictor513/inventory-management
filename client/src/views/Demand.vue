@@ -224,6 +224,48 @@ export default {
 </script>
 
 <style scoped>
+.page-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.page-header p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+table thead th {
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+table tbody tr:hover {
+  background: #f1f5f9;
+}
+
 .demand-trend-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -237,6 +279,7 @@ export default {
   border-radius: 10px;
   padding: 1.5rem;
   transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .trend-card:hover {
